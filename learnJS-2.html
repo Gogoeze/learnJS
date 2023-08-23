@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>withdrawal</title>
+  <div id="withdraw-button"></div>
+</head>
+
+<body>
+  <input id="withdraw_button" placeholder="Amount" ;><br><br>
+  <button
+    onclick="run()">Withdraw</button>
+
+  <script>
+    function run() {
+      let valueFromInput = document.getElementById("withdraw_button").value;
+      let withdrawalAmount;
+
+     if (valueFromInput === "") {
+      alert ('please insert amount.')
+     } else{
+
+     };
+    //  alert(withdraw('', calculateAccountBalance()))
+
+      // const message = withdraw(calculateAccountBalance(), withdrawalAmount);
+
+      // alert(message);
+    }
+
+    function calculateAccountBalance() {
+      return 5000;
+    }
+
+    function withdraw(accountBalance, withdrawAmount) {
+
+      if (withdrawAmount > accountBalance) {
+        const topUp = withdrawAmount - accountBalance;
+        const remainingAmount = accountBalance - withdrawAmount
+        return `cannot withdraw ${withdrawAmount} you need to top up your account with an extra ${topUp}`
+      } else if (withdrawAmount = accountBalance) {
+        return 'Withdraw successful!, but your bank account is now empty!'
+      } else {
+        return `Withdraw successful!, you now have ${remainingAmount} left in your account`
+      }
+    }
+    // alert(withdraw(10000, calculateAccountBalance()))
+
+  </script>
+</body>
+
+</html>

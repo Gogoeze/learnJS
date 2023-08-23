@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+  <html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="random-Decor.css">
+    <header>
+      <h1>The Fancy Color Event</h1>
+      <p>Cocktails & Convo.</p>
+    </header>
+    <br>
+    <!-- 
+    <nav>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Locations</a></li>
+      <li><a href="#">RSVP</a></li>
+    </nav>
+     -->
+    <br>
+    <h2> The Fancy Color Event. <sub></sub></h2>
+  </head>
+  <body>
+   
+    <p>The 1st annual Fancy Color Event is being held in Abuja on the 20th of December. This is going to be the fanciest color event of the year, starring IT girls and gents. This event was made to show the world how great people really are. There will be treats at the walk in, and for the parties VIPs there will be a buffet in the lounge. We thank you for coming to our event site, and hope to see you on December 20th. Thank you. </p>
+    <br>
+    <img src="./color-collage.jpg">
+    <br>
+    <h3>Represented Colors</h3>
+    <h4>Blue</h4>
+    <h4>Green</h4>
+    <h4>Red</h4>
+    <h4>Pink</h4>
+    <h4>Purple</h4>
+    <h4>Orange</h4>
+    <h4>Yellow</h4>
+   
+     <!-- <label for="Colors">Pick a color</label>  -->
+     <input placeholder="Color" class="color-choice" 
+     onkeydown =" if(event.key=== 'Enter') {
+      eventKey();
+     }
+     ">
+    <!-- <select name = "Colors" id="Colors" >
+
+    <option value="Blue">Blue</option>
+    <option value="Green">Green</option>
+    <option value="Red">Red</option>
+    <option value="Pink">Pink</option>
+    <option value="Purple">Purple</option>
+    <option value="Orange">Orange</option>
+    <option value="Yellow">Yellow</option>
+    </select> -->
+
+    <button onclick ="
+    eventKey();
+    " >Enter</button>
+
+    <p class="js-color-message"></p>
+
+  
+    <ul>
+  <p><b>These colors will be the showrunners this year.</b>
+    <li> Blue is the color of trust, serenity, and peace. It suggests loyalty and integrity as well as conservatism and predictability.</li><br>
+    <li> Green is of nature, of balance and growth. It is restful and secure, symbolizing harmony, healing, and stability. </li><br>
+    <li>Red attracts the most attention and is associated with strong emotions, such as love and passion, it’s the universal color to signify strength, power, courage, and danger.</li><br>
+    <li>Pink is a light red hue and is typically associated with love and romance. It is often described as a feminine color. People associate the color with qualities that are often thought of as feminine, such as softness, kindness, nurturing, and compassion.  </li><br>
+    <li>Purple is the color of imagination and spirituality, inspiring high ideals. It can be creative and individual or immature and impractical. People drawn to purple are usually sensitive and compassionate, understanding and supportive, thinking of others before themselves.</li><br>
+    <li>Orange is the hue of encouragement, optimism, and self-confidence, marking the extrovert. Orange radiates warmth and happiness, combining the physical energy and stimulation of red with the cheerfulness of yellow.</li><br>
+    <li>Yellow is the color of the mind and the intellect, resonating with the left, logical side of the brain. It is creative, the tone of new ideas and new ways of doing things. </li><br>
+    
+  </p></ul>
+
+  </body>
+  <script>
+    function eventKey() {
+      const color = document.querySelector('.color-choice').value;
+    document.querySelector('.js-color-message').innerHTML = `You chose: ${color} `;
+    }
+  </script>
+
+  </html>
