@@ -6,41 +6,77 @@
 </head>
 
 <body>
-  <button onclick="buttonDown('1')">1</button>
-  <button>2</button>
-  <button>3</button>
-  <button>4</button>
-  <p></p>
-  
-  <button>5</button>
-  <button>6</button>
-  <button>7</button>
-  <button>8</button>
-  <p></p>
-  
-  <button>9</button>
-  <button>0</button>
-  <button>*</button>
-  <button>/</button>
-  <p></p>
-  
-  <button>-</button>
-  <button>+</button>
-  <button>=</button>
-  <button>Clear</button>
-  <p></p>
-  
-  <p id="demo"></p>
+  <link rel="stylesheet" href="styles/calculator.css">
+  <p id='demo'></p>
 
-  <script>
-  let num=" ";
-  function buttonDown(value) {
- num += value
+  <button onclick = "document.getElementById('demo').innerHTML= calculation += '1' ">1</button>
+  <button onclick = "document.getElementById('demo').innerHTML= calculation += '2' ">2</button>
+  <button onclick = "document.getElementById('demo').innerHTML= calculation += '3' ">3</button>
+  <button onclick = "document.getElementById('demo').innerHTML= calculation += ' + ' ">+</button>
+  <p> </p>
+
+  <button onclick = "document.getElementById('demo').innerHTML= calculation += '4' ">4</button>
+  <button onclick = "document.getElementById('demo').innerHTML= calculation += '5' ">5</button>
+  <button onclick = "document.getElementById('demo').innerHTML= calculation += '6' ">6</button>
+  <button onclick = "document.getElementById('demo').innerHTML= calculation += ' - ' ">-</button>
+  <p> </p>
+  
+  <button onclick = "document.getElementById('demo').innerHTML= calculation += '7' ">7</button>
+  <button onclick = "document.getElementById('demo').innerHTML= calculation += '8' ">8</button>
+  <button onclick = "document.getElementById('demo').innerHTML= calculation += '9' ">9</button>
+  <button onclick = "document.getElementById('demo').innerHTML= calculation += ' / ' ">/</button>
+  <p> </p>
+
+  <!-- <button onclick = "document.getElementById('demo').innerHTML= calculation + '' ">Del</button> -->
+  <button onclick = "document.getElementById('demo').innerHTML= calculation += '.' ">.</button>
+  <button onclick = "document.getElementById('demo').innerHTML= calculation += '0' ">0</button>
+  <button onclick = "document.getElementById('demo').innerHTML= calculation += ' * ' ">*</button>
+  <button onclick = "document.getElementById('demo').innerHTML= calculation = eval(calculation)">=</button>
+  <p> </p>
+
+  <button onclick = "document.getElementById('demo').innerHTML= calculation =`${calculation -= '1'}`">Del</button>
+  <button onclick = "document.getElementById('demo').innerHTML= calculation = ''">Clear</button>
+  <p> </p>
+
+  <!-- <button onclick="console.log(calculation += '1' )">1</button>
+  <button onclick="console.log(calculation += '2' )">2</button>
+  <button onclick="console.log(calculation += '3' )">3</button>
+  <button onclick="console.log(calculation += ' + ' )">+</button>
+  <button onclick="console.log(calculation = eval(calculation))">=</button> -->
+  
+  <div>
+  <!-- <p>Rock Paper Scissors</p>
+
+  <button onclick ="
+   let randomN = Math.random();
+
+   if (randomN <= 0 && randomN >= 1/3) {
+     computerMove = 'Rock.';
+   } else if (randomN < 1/3 && randomN >= 2/3) {
+     computerMove = 'Paper.';
+   } else if (randomN < 2/3 && randomN >= 1) {
+     computerMove = 'Scissors.';
+   }
+   console.log(computerMove);
+  ">Rock</button>  -->
+ 
+  <!-- <button onclick ="
+   let randomN = Math.random();
+   if (randomN <= 1/3 && randomN >= 2/3) {
+    alert('You picked Paper.')
+   }
+  ">Paper</button>
+
+  <button onclick ="
+  let randomN = Math.random();
+  if (randomN <= 2/3 && randomN >= 1) {
+  console.log('You picked Scissors.')
   }
-  document.getElementById("demo").innerHTML =num;
+  ">Scissors</button> -->
+  </div>
 
-    console.log(num);
-  </script>
+  <script src="scripts/calculator.js"></script>
+
 </body>
 
 </html>

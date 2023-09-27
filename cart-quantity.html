@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cart Quantity</title>
+</head>
+
+<body>
+    <p>Cart Quantity</p>
+
+    <button onclick="document.getElementById('demo').innerHTML =`Cart Quantity: ${cartQuantity}`">Show Quantity</button>
+    
+    <button onclick="document.getElementById('demo').innerHTML =`Cart Quantity: ${cartQuantity ++}`">Add to Cart</button>
+    
+    <button onclick="document.getElementById('demo').innerHTML =`Cart Quantity: ${cartQuantity += 2}`">+2</button>
+    
+    <button onclick="document.getElementById('demo').innerHTML =`Cart Quantity: ${cartQuantity += 3}`">+3</button>
+    
+    <button onclick="document.getElementById('demo').innerHTML =`Cart Quantity: ${cartQuantity += 4}`">+4</button>
+    
+    <button onclick="document.getElementById('demo').innerHTML =`Cart Quantity: ${cartQuantity += 5}`">+5</button> 
+    
+    <button onclick="document.getElementById('demo').innerHTML =`Cart Quantity: ${cartQuantity --}`">Remove from cart</button>
+    
+    <button onclick="document.getElementById('demo').innerHTML =`Cart Quantity: ${cartQuantity -= 2}`">-2</button>
+    
+    <button onclick="document.getElementById('demo').innerHTML =`Cart Quantity: ${cartQuantity -= 3}`">-3</button>
+    
+    <button onclick="document.getElementById('demo').innerHTML =`Cart Quantity: ${cartQuantity -= cartQuantity} 
+    Cart was reset!`">Reset Cart</button>
+    
+    <p id='demo'></p>
+    
+
+  <script>
+    let cartQuantity = 0;
+
+    // document.getElementById("demo").innerHTML = "Cart Quantity: 0";
+
+ 
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gogo's calculator</title>
+</head>
+
+<body>
+  <p id="demo"></p>
+
+  <button onclick = "buttonDown('1')">1</button>
+  <button onclick = "buttonDown('2')">2</button>
+  <button onclick = "buttonDown('3')">3</button>
+  <button onclick = "buttonDown('/')">/</button>
+  <p> </p>
+  
+  <button onclick = "buttonDown('4')">4</button>
+  <button onclick = "buttonDown('5')">5</button>
+  <button onclick = "buttonDown('6')">6</button>
+  <button onclick = "buttonDown('-')">-</button>
+  <p> </p>
+  
+  <button onclick = "buttonDown('8')">8</button>
+  <button onclick = "buttonDown('9')">9</button>
+  <button onclick = "buttonDown('0')">0</button>
+  <button onclick = "buttonDown('+')">+</button>
+  <p> </p>
+  
+  <button onclick = "buttonDown('.')">.</button>
+  <button onclick = "buttonDown('*')">*</button>
+  <button onclick = "buttonDown('-')">-</button>
+  <button onclick = "buttonDown('=')">=</button>
+  <p></p>
+  
+  <button onclick="buttonDown(' ')">Clear</button>
+
+  <script>
+
+ function buttonDown(num) {
+    document.getElementById("demo").innerHTML = num;
+  }
+
+  </script>
+</body>
+
+</html>
